@@ -10,4 +10,4 @@ RUN npm install
 
 EXPOSE 3000
 
-CMD [ "node", "/web/app/server.js" ]
+CMD [ "node", "/hw5/app/server.js" ]
