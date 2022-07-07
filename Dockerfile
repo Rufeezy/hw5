@@ -1,11 +1,13 @@
 FROM node:slim
 
-WORKDIR /app
-
-COPY package*.json ./
-
-RUN nmp install
+WORKDIR /hw5
 
 COPY . .
 
-CMD ["node", "app.js"]
+WORKDIR /hw5/app
+
+RUN npm install
+
+EXPOSE 3000
+
+CMD [ "node", "/web/app/server.js" ]
