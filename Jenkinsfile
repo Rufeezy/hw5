@@ -4,9 +4,9 @@ pipeline{
         pollSCM '* * * * *'
         }
     stages{
-        stage("build jar package"){
+        stage("build nmp"){
             steps{
-                sh "nmp package"
+                sh "nmp install"
             }
         }
         stage("build image"){
